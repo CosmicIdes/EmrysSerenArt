@@ -6,4 +6,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MudBlazor" Version="7.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EmrysSerenAPI\EmrysSerenAPI.csproj" />
+    <ProjectReference Include="..\EmrysSerenData\EmrysSerenData.csproj" />
+    <ProjectReference Include="..\EmrysSerenShared\EmrysSerenShared.csproj" />
+  </ItemGroup>
+
 </Project>

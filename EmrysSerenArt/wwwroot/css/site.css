@@ -1,17 +1,465 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
-html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+a {
+    text-decoration: none;
+    color: rgb(83, 82, 138);
 }
 
-h1:focus {
-    outline: none;
+    a:hover {
+        text-decoration: none;
+        color: #f4cd92;
+    }
+
+body {
+    font-family: 'Lexend Exa', sans-serif;
+    background-color: #9190c0;
+    background-image: url("../images/wallpaper.png");
+    background-repeat: repeat;
+    background-size: 400px;
+    text-align: center;
+    color: rgb(83, 82, 138);
 }
 
-a, .btn-link {
-    color: #0071c1;
+header {
+    font-family: 'Sue Ellen Francisco', cursive;
+    padding: 0;
+    margin: auto;
+    position: relative;
 }
 
+h1 {
+    color: rgb(83, 82, 138);
+    font-size: 32px;
+    padding: 3px;
+    margin: 3px 3px 0px 0px;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(83, 82, 138);
+    font-size: 28px;
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 0;
+    color: rgb(83, 82, 138)
+}
+
+.h3sub {
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    color: rgb(83, 82, 138)
+}
+
+h4 {
+    font-family: 'Sue Ellen Francisco', cursive;
+    color: rgb(83, 82, 138);
+    font-size: 24px;
+}
+
+h5 {
+    font-family: 'Sue Ellen Francisco', cursive;
+    color: rgb(83, 82, 138);
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+
+h6 {
+    font-family: 'Lexend Exa' sans-serif;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: 'Lexend Exa' sans-serif;
+    color: rgb(83, 82, 138);
+    font-size: 14px;
+}
+
+.subHeader {
+    background-color: #f1f0f7;
+    border-radius: 10px;
+    margin: .5rem;
+    padding: auto;
+    position: center;
+    display: inline-block;
+}
+
+
+/*navigation*/
+
+button#menuBtn {
+    background: #f1f0f7;
+    border: none;
+    color: rgb(83, 82, 138);
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    padding: 0.5rem;
+    margin: 0;
+    border: rgb(83, 82, 138) solid 3px;
+    border-radius: 10px;
+}
+
+nav {
+    background-color: #f1f0f7;
+    display: block;
+    color: rgb(83, 82, 138);
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Sue Ellen Francisco', cursive;
+    position: absolute;
+    z-index: 1000;
+}
+
+    nav ul {
+        margin: 0;
+        font-size: 1.5rem;
+        border: rgb(83, 82, 138) solid 1px;
+        padding: .8rem;
+    }
+
+    nav li {
+        list-style-type: none;
+    }
+
+        nav li.active {
+            background-color: rgba(0,0,0,0.5);
+        }
+
+    nav a:hover {
+        background-color: rgba(0,0,0,0);
+    }
+
+    nav ul.open {
+        display: block;
+    }
+
+    nav > ul {
+        display: none;
+    }
+
+
+/*end navigation*/
+
+
+/*cards*/
+
+.cardStack {
+    display: inline-block;
+    position: center;
+    margin: auto;
+}
+
+.card {
+    padding: 0 130px;
+    margin: 5px;
+    background-color: #f1f0f7;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    border: 1px solid rgb(83, 82, 138);
+}
+
+.cardHalf {
+    padding: 0;
+    margin: 3px;
+    background-color: #f1f0f7;
+    text-align: right;
+    padding: 0 1rem 0;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    flex-direction: row;
+    flex-basis: 50%;
+    max-width: 205px;
+    border: 1px solid rgb(83, 82, 138);
+}
+
+.cardStackHalf {
+    display: flex;
+    position: center;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+}
+
+.hoverImgLeft {
+    display: none;
+    height: 72px;
+}
+
+.baseImgLeft {
+    display: inline-block;
+    position: absolute;
+    left: 1.5rem;
+    bottom: .3rem;
+    padding: .5rem;
+    height: 72px;
+}
+
+.card:hover .hoverImgLeft {
+    display: inline-block;
+    position: absolute;
+    left: 1.5rem;
+    bottom: .3rem;
+    padding: .5rem;
+}
+
+.card:hover .baseImgLeft {
+    display: none;
+}
+
+.hoverImgLeftHalf {
+    display: none;
+    height: 72px;
+}
+
+.baseImgLeftHalf {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: .3rem;
+    padding: .5rem;
+    height: 72px;
+}
+
+.cardHalf:hover .hoverImgLeftHalf {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: .3rem;
+    padding: .5rem;
+}
+
+.cardHalf:hover .baseImgLeftHalf {
+    display: none;
+}
+
+.hoverImgRight {
+    display: none;
+    height: 72px;
+}
+
+.baseImgRight {
+    display: inline-block;
+    position: absolute;
+    right: 1.5rem;
+    bottom: .3rem;
+    padding: .5rem;
+    height: 72px;
+}
+
+.card:hover .hoverImgRight {
+    display: inline-block;
+    position: absolute;
+    right: 1.5rem;
+    bottom: .3rem;
+    padding: .5rem;
+}
+
+.card:hover .baseImgRight {
+    display: none;
+}
+/* end cards*/
+
+/*footer*/
+.footerDiv {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f0f7;
+}
+
+.footerLeft {
+    flex-basis: 75%;
+    padding: 1.5rem;
+}
+
+.footerRight {
+    flex-basis: 25%;
+    padding: 1.5rem;
+}
+
+.socialMedia {
+    list-style: none;
+    padding: .5rem;
+}
+
+.btnNewsletter {
+    background: none;
+    border: none;
+    color: rgb(83, 82, 138);
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    border: rgb(83, 82, 138) solid 2px;
+    border-radius: 10px;
+}
+
+.inputNewsletter {
+    line-height: 3.5;
+    font-family: 'Lexend Exa', sans-serif;
+}
+
+.horizontalLine {
+    border-top: 1px dashed #f1f0f7;
+}
+
+.verticalLine {
+    border-top: 1px dashed black;
+}
+
+/*Updates Page*/
+
+.mainUpdates {
+    background-color: #f1f0f7;
+    border: 1px solid rgb(83, 82, 138);
+    border-radius: 10px;
+}
+
+.updateBox {
+    border: 1px solid rgb(83, 82, 138);
+    border-radius: 10px;
+    display: inline-block;
+    position: center;
+    margin: .5rem;
+    padding: 0.3rem;
+    background-color: #ffffff;
+}
+
+.updateBody {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 0.3rem;
+    margin: 1rem;
+    max-width: 500px;
+    position: center;
+}
+
+.tags {
+    font-style: oblique;
+    text-align: left;
+    padding: 0;
+    margin: 1.2rem;
+}
+
+/*Support Us Page*/
+
+.mainSupportUs {
+    background-color: #f1f0f7;
+    border: 1px solid rgb(83, 82, 138);
+    border-radius: 10px;
+}
+
+.socialListItem {
+    list-style: none;
+    text-align: center;
+    position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.supportUsBody {
+    background-color: #ffffff;
+    border: 1px solid rgb(171, 171, 224);
+    border-radius: 10px;
+    margin-top: 0;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-bottom: 2.5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-bottom: 2rem;
+    position: center;
+    display: inline-block;
+}
+
+/*Navigation Page*/
+
+.navigationList {
+    list-style: none;
+}
+
+.navigationPage {
+    background-color: #f1f0f7;
+    border: 1px solid rgb(83, 82, 138);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.navigationLinks {
+    background-color: #ffffff;
+    border: 1px solid rgb(171, 171, 224);
+    border-radius: 10px;
+    margin: .5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-bottom: 2rem;
+}
+
+.navigationSubHeader {
+    font-size: 26px;
+    padding: .5rem 0 0 0;
+}
+
+/*Gallery Page*/
+
+.mainGallery {
+    background-color: #f1f0f7;
+    border: 1px solid rgb(83, 82, 138);
+    border-radius: 10px;
+}
+
+.galleryBody {
+    background-color: #ffffff;
+    border: 1px solid rgb(171, 171, 224);
+    border-radius: 10px;
+    margin: .5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-bottom: 2rem;
+}
+
+.galleryThumb {
+    max-width: 150px;
+    border: 1px solid rgb(83, 82, 138)
+}
+
+.gallerySingle {
+    background-color: #ffffff;
+    border: 1px solid rgb(171, 171, 224);
+    border-radius: 10px;
+    margin: .5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-bottom: 2rem;
+}
+
+.fullImg {
+    padding: 1rem;
+    margin: 1rem;
+    width: 80%;
+    height: auto;
+}
+
+
+/*Blazor css*/
 .btn-primary {
     color: #fff;
     background-color: #1b6ec2;
