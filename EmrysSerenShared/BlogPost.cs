@@ -7,7 +7,7 @@
         public string BlogPostBody { get; set; }
         public DateTime BlogPostDate { get; set; }
         public DateTime BlogPostTime { get; set; }
-        public string[] BlogPostTags { get; set; }
+        public List<BlogTag> BlogTags { get; set; }
 
     }
 }
