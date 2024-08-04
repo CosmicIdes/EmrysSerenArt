@@ -12,6 +12,7 @@
         public User UserName { get; set; }
         public User UserAvatar { get; set; }
 
+        public BlogPost BlogPost { get; set; }
         public BlogPost BlogPostId { get; set; }
         public BlogPost BlogPostTitle { get; set; }
         public BlogPost BlogPostBody { get; set; }

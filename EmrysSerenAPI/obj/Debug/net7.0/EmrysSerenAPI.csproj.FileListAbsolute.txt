@@ -71,3 +71,7 @@ C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenA
 C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenAPI\obj\Debug\net7.0\EmrysSerenAPI.pdb
 C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenAPI\obj\Debug\net7.0\EmrysSerenAPI.genruntimeconfig.cache
 C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenAPI\obj\Debug\net7.0\ref\EmrysSerenAPI.dll
+C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenAPI\bin\Debug\net7.0\Humanizer.dll
+C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenAPI\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenAPI\bin\Debug\net7.0\System.CodeDom.dll

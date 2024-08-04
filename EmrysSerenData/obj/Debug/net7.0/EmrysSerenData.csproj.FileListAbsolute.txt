@@ -14,3 +14,5 @@ C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenD
 C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenData\obj\Debug\net7.0\refint\EmrysSerenData.dll
 C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenData\obj\Debug\net7.0\EmrysSerenData.pdb
 C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenData\obj\Debug\net7.0\ref\EmrysSerenData.dll
+C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenData\bin\Debug\net7.0\EmrysSerenData.runtimeconfig.json
+C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenData\obj\Debug\net7.0\EmrysSerenData.genruntimeconfig.cache

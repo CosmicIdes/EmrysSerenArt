@@ -3,23 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenArt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C7DF8344-088E-4D34-A125-F0D196DA5180}|EmrysSerenArt.csproj|c:\\users\\brand\\onedrive\\desktop\\projects\\emrysserenart\\emrysserenart\\emrysserenart\\pages\\updatedetail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C7DF8344-088E-4D34-A125-F0D196DA5180}|EmrysSerenArt.csproj|solutionrelative:pages\\updatedetail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{905D26C6-47B0-4A5A-9ECF-D759E66FB8C0}|..\\EmrysSerenData\\EmrysSerenData.csproj|c:\\users\\brand\\onedrive\\desktop\\projects\\emrysserenart\\emrysserenart\\emrysserendata\\esdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7DF8344-088E-4D34-A125-F0D196DA5180}|EmrysSerenArt.csproj|c:\\users\\brand\\onedrive\\desktop\\projects\\emrysserenart\\emrysserenart\\emrysserenart\\emrysserenart.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C7DF8344-088E-4D34-A125-F0D196DA5180}|EmrysSerenArt.csproj|solutionrelative:emrysserenart.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{DF99C777-3837-4C5B-AA28-ED0596430C74}|..\\EmrysSerenShared\\EmrysSerenShared.csproj|c:\\users\\brand\\onedrive\\desktop\\projects\\emrysserenart\\emrysserenart\\emrysserenshared\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7DF8344-088E-4D34-A125-F0D196DA5180}|EmrysSerenArt.csproj|c:\\users\\brand\\onedrive\\desktop\\projects\\emrysserenart\\emrysserenart\\emrysserenart\\pages\\updates.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C7DF8344-088E-4D34-A125-F0D196DA5180}|EmrysSerenArt.csproj|solutionrelative:pages\\updates.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DF99C777-3837-4C5B-AA28-ED0596430C74}|..\\EmrysSerenShared\\EmrysSerenShared.csproj|c:\\users\\brand\\onedrive\\desktop\\projects\\emrysserenart\\emrysserenart\\emrysserenshared\\commentpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21465350-48EA-41C9-A1EA-765552FAE693}|..\\EmrysSerenAPI\\EmrysSerenAPI.csproj|c:\\users\\brand\\onedrive\\desktop\\projects\\emrysserenart\\emrysserenart\\emrysserenapi\\controllers\\commentpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7DF8344-088E-4D34-A125-F0D196DA5180}|EmrysSerenArt.csproj|c:\\users\\brand\\onedrive\\desktop\\projects\\emrysserenart\\emrysserenart\\emrysserenart\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C7DF8344-088E-4D34-A125-F0D196DA5180}|EmrysSerenArt.csproj|solutionrelative:pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DF99C777-3837-4C5B-AA28-ED0596430C74}|..\\EmrysSerenShared\\EmrysSerenShared.csproj|c:\\users\\brand\\onedrive\\desktop\\projects\\emrysserenart\\emrysserenart\\emrysserenshared\\blogpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,68 +22,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UpdateDetail.razor",
-              "DocumentMoniker": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenArt\\Pages\\UpdateDetail.razor",
-              "RelativeDocumentMoniker": "Pages\\UpdateDetail.razor",
-              "ToolTip": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenArt\\Pages\\UpdateDetail.razor",
-              "RelativeToolTip": "Pages\\UpdateDetail.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-02T14:03:56.404Z",
+              "DocumentIndex": 3,
+              "Title": "BlogPost.cs",
+              "DocumentMoniker": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenShared\\BlogPost.cs",
+              "RelativeDocumentMoniker": "..\\EmrysSerenShared\\BlogPost.cs",
+              "ToolTip": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenShared\\BlogPost.cs",
+              "RelativeToolTip": "..\\EmrysSerenShared\\BlogPost.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T03:16:45.31Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Updates.razor",
-              "DocumentMoniker": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenArt\\Pages\\Updates.razor",
-              "RelativeDocumentMoniker": "Pages\\Updates.razor",
-              "ToolTip": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenArt\\Pages\\Updates.razor",
-              "RelativeToolTip": "Pages\\Updates.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-02T13:52:05.168Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CommentPostController.cs",
-              "DocumentMoniker": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenAPI\\Controllers\\CommentPostController.cs",
-              "RelativeDocumentMoniker": "..\\EmrysSerenAPI\\Controllers\\CommentPostController.cs",
-              "ToolTip": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenAPI\\Controllers\\CommentPostController.cs",
-              "RelativeToolTip": "..\\EmrysSerenAPI\\Controllers\\CommentPostController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Title": "CommentPost.cs",
+              "DocumentMoniker": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenShared\\CommentPost.cs",
+              "RelativeDocumentMoniker": "..\\EmrysSerenShared\\CommentPost.cs",
+              "ToolTip": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenShared\\CommentPost.cs",
+              "RelativeToolTip": "..\\EmrysSerenShared\\CommentPost.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T13:48:37.135Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.razor",
-              "DocumentMoniker": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenArt\\Pages\\Index.razor",
-              "RelativeDocumentMoniker": "Pages\\Index.razor",
-              "ToolTip": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenArt\\Pages\\Index.razor",
-              "RelativeToolTip": "Pages\\Index.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-02T13:45:34.547Z"
+              "WhenOpened": "2024-08-04T03:16:39.11Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EmrysSerenArt.csproj",
-              "DocumentMoniker": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenArt.csproj",
-              "RelativeDocumentMoniker": "EmrysSerenArt.csproj",
-              "ToolTip": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenArt.csproj",
-              "RelativeToolTip": "EmrysSerenArt.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-02T13:40:42.615Z"
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenShared\\User.cs",
+              "RelativeDocumentMoniker": "..\\EmrysSerenShared\\User.cs",
+              "ToolTip": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenShared\\User.cs",
+              "RelativeToolTip": "..\\EmrysSerenShared\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T03:10:29.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ESDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenData\\ESDbContext.cs",
+              "RelativeDocumentMoniker": "..\\EmrysSerenData\\ESDbContext.cs",
+              "ToolTip": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenData\\ESDbContext.cs",
+              "RelativeToolTip": "..\\EmrysSerenData\\ESDbContext.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA5wCIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T22:44:22.308Z",
+              "EditorCaption": ""
             }
           ]
         }

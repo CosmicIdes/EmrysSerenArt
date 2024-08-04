@@ -6,32 +6,29 @@ namespace EmrysSerenData
 {
     public class ESDbContext : DbContext
     {
-        public ESDbContext(DbContextOptions<ESDbContext> options) : base(options)
-        {
+        private readonly string _connectionString;
 
+        public ESDbContext(string connectionString)
+        {
+            _connectionString = connectionString;
         }
 
-        public DbSet<BlogPost> BlogPosts { get; set; }  
-        public DbSet<CommentPost> CommentPosts { get; set; }
-        public DbSet<User> Users { get; set; }
-
-        protected readonly IConfiguration Configuration;
-
-        public ESDbContext(IConfiguration configuration)
-        {
-            Configuration = configuration;
+        public ESDbContext(DbContextOptions<ESDbContext> options) : base(options)
+        { 
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(Configuration.GetConnectionString("BlogDB"));
+            optionsBuilder.UseSqlite(_connectionString);
         }
+
+        public DbSet<BlogPost> BlogPosts { get; set; }
+        public DbSet<CommentPost> CommentPosts { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-
-
+       
         }
     }
 }
