@@ -22,13 +22,21 @@ namespace EmrysSerenData
             optionsBuilder.UseSqlite(_connectionString);
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<BlogPostDetail>().HasKey(bd => new
+            {
+                bd.BlogPostId,
+                bd.CommentPostId,
+                bd.UserId
+            });
+        }
+
         public DbSet<BlogPost> BlogPosts { get; set; }
         public DbSet<CommentPost> CommentPosts { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<BlogPostDetail> BlogPostDetails { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-       
-        }
+      
     }
 }
