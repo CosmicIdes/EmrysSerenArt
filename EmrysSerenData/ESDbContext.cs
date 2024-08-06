@@ -1,4 +1,5 @@
-﻿using EmrysSerenShared;
+﻿using EmrysSerenData.Configuration;
+using EmrysSerenShared;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -30,13 +31,15 @@ namespace EmrysSerenData
                 bd.CommentPostId,
                 bd.UserId
             });
+            modelBuilder.ApplyConfiguration(new BlogPostDetailConfiguration());
+            modelBuilder.ApplyConfiguration(new UserConfiguration());
         }
 
         public DbSet<BlogPost> BlogPosts { get; set; }
         public DbSet<CommentPost> CommentPosts { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<BlogPostDetail> BlogPostDetails { get; set; }
-
+        public DbSet<BlogTag> BlogTags { get; set; }
       
     }
 }
