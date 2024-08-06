@@ -25,15 +25,26 @@ namespace EmrysSerenData
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<BlogPostDetail>()
+                .Property(e => e.CommentPostId)
+                .HasConversion(
+                    v => v.ToString(), 
+                    v => (CommentPost)Enum.Parse(typeof(CommentPost), v));
+
             modelBuilder.Entity<BlogPostDetail>().HasKey(bd => new
             {
                 bd.BlogPostId,
                 bd.CommentPostId,
-                bd.UserId
+                bd.UserId,
+                bd.BlogTagId
             });
             modelBuilder.ApplyConfiguration(new BlogPostDetailConfiguration());
             modelBuilder.ApplyConfiguration(new UserConfiguration());
             modelBuilder.ApplyConfiguration(new BlogTagConfiguration());
+
+            
         }
 
         public DbSet<BlogPost> BlogPosts { get; set; }

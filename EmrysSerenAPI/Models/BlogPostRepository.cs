@@ -38,7 +38,6 @@ namespace EmrysSerenAPI.Models
                 foundBlogPost.BlogPostId = blogPost.BlogPostId;
                 foundBlogPost.BlogPostTitle = blogPost.BlogPostTitle;
                 foundBlogPost.BlogPostBody = blogPost.BlogPostBody;
-                foundBlogPost.BlogPostTags = blogPost.BlogPostTags;
                 foundBlogPost.BlogPostDate = blogPost.BlogPostDate;
                 foundBlogPost.BlogPostTime = blogPost.BlogPostTime;
 

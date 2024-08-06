@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "i4C9YYt64JVo9M34ipQtAr5mkZI2kdNpeCYRfpxhBDg=",
+  "Hash": "8FJLhFtIKAUFjCAxnPhExQSjhz8FkGh1VeJZ+Nz/nD4=",
   "Source": "EmrysSerenArt",
   "BasePath": "_content/EmrysSerenArt",
   "Mode": "Default",
@@ -369,6 +369,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\background.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenArt\\wwwroot\\images\\calliopewoods.jpg",
+      "SourceId": "EmrysSerenArt",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenArt\\wwwroot\\",
+      "BasePath": "_content/EmrysSerenArt",
+      "RelativePath": "images/calliopewoods.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\calliopewoods.jpg"
     },
     {
       "Identity": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenArt\\wwwroot\\images\\fanworks\\notteillustemrysseren.png",

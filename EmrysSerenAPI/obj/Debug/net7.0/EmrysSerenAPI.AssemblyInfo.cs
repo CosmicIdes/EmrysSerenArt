@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmrysSerenAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+818f1acafb3f5cb44a50eecd1422f56395cfe461")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17c3c3f2778f00abc099f746cc96ef85e517f04b")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmrysSerenAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmrysSerenAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
