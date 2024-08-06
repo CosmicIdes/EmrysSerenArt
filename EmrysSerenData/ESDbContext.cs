@@ -33,6 +33,7 @@ namespace EmrysSerenData
             });
             modelBuilder.ApplyConfiguration(new BlogPostDetailConfiguration());
             modelBuilder.ApplyConfiguration(new UserConfiguration());
+            modelBuilder.ApplyConfiguration(new BlogTagConfiguration());
         }
 
         public DbSet<BlogPost> BlogPosts { get; set; }
