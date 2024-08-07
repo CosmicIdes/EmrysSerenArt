@@ -40,10 +40,11 @@ namespace EmrysSerenData
                 bd.UserId,
                 bd.BlogTagId
             });
+            
             modelBuilder.ApplyConfiguration(new BlogPostDetailConfiguration());
             modelBuilder.ApplyConfiguration(new UserConfiguration());
             modelBuilder.ApplyConfiguration(new BlogTagConfiguration());
-
+            
             
         }
 
