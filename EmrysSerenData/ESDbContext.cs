@@ -1,4 +1,5 @@
-﻿using EmrysSerenData.Configuration;
+﻿using System.Reflection.Metadata;
+using EmrysSerenData.Configuration;
 using EmrysSerenShared;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -26,29 +27,28 @@ namespace EmrysSerenData
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
+            
+            modelBuilder.Entity<BlogPostDetail>()
+                .HasMany(e => e.CommentPosts)
+                .WithOne(e => e.BlogPostDetail)
+                .HasForeignKey(e => e.CommentPostId)
+                .HasPrincipalKey(e => e.BlogPostDetailId);
+            
+            /*
             modelBuilder.Entity<BlogPostDetail>()
                 .Property(e => e.CommentPostId)
                 .HasConversion(
                     v => v.ToString(), 
                     v => (CommentPost)Enum.Parse(typeof(CommentPost), v));
-
-            modelBuilder.Entity<BlogPostDetail>().HasKey(bd => new
-            {
-                bd.BlogPostId,
-                bd.CommentPostId,
-                bd.UserId,
-                bd.BlogTagId
-            });
-            
+            */
+            /*
             modelBuilder.ApplyConfiguration(new BlogPostDetailConfiguration());
             modelBuilder.ApplyConfiguration(new UserConfiguration());
             modelBuilder.ApplyConfiguration(new BlogTagConfiguration());
-            
-            
+            */
+
         }
 
-        public DbSet<BlogPost> BlogPosts { get; set; }
         public DbSet<CommentPost> CommentPosts { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<BlogPostDetail> BlogPostDetails { get; set; }

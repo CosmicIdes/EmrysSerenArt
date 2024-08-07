@@ -5,7 +5,7 @@ namespace EmrysSerenShared
 {
     public class BlogPostDetail
 	{
-        public int BlogPostId { get; set; }
+        public int BlogPostDetailId { get; set; }
         [Required]
         public string BlogPostTitle { get; set; }
         [Required]
@@ -13,7 +13,6 @@ namespace EmrysSerenShared
         [Required]
         public DateTime BlogPostDate { get; set; }
         public DateTime BlogPostTime { get; set; }
-        public BlogPost BlogPost { get; set; }
 
         public int BlogTagId { get; set; }
         public BlogTag BlogTag { get; set; }
@@ -23,7 +22,8 @@ namespace EmrysSerenShared
         public User User { get; set; }
 
         [NotMapped]
-        public CommentPost? CommentPostId { get; set; }
+        public ICollection<CommentPost> CommentPosts { get; }
+        [NotMapped]
         public CommentPost CommentPost { get; set; }
     }
 }

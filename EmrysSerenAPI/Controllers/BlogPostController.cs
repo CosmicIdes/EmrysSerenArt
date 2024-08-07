@@ -30,17 +30,17 @@ namespace EmrysSerenAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateBlogPost([FromBody] BlogPost blogPost)
+        public IActionResult CreateBlogPost([FromBody] BlogPostDetail blogPostDetail)
         {
-            if (blogPost == null)
+            if (blogPostDetail == null)
                 return BadRequest();
 
-            if (blogPost.BlogPostTitle == string.Empty)
+            if (blogPostDetail.BlogPostTitle == string.Empty)
             {
                 ModelState.AddModelError("Blog Post Title", "The blog post title cannot be blank.");
             }
 
-            if (blogPost.BlogPostBody == string.Empty)
+            if (blogPostDetail.BlogPostBody == string.Empty)
             {
                 ModelState.AddModelError("Blog Post Body", "The blog post body cannot be blank.");
             }
@@ -54,17 +54,17 @@ namespace EmrysSerenAPI.Controllers
         }
 
         [HttpPut]
-        public IActionResult EditBlogPost([FromBody] BlogPost blogPost)
+        public IActionResult EditBlogPost([FromBody] BlogPostDetail blogPostDetail)
         {
-            if (blogPost == null)
+            if (blogPostDetail == null)
                 return BadRequest();
 
-            if (blogPost.BlogPostTitle == string.Empty)
+            if (blogPostDetail.BlogPostTitle == string.Empty)
             {
                 ModelState.AddModelError("Blog Post Title", "The blog post title cannot be blank.");
             }
 
-            if (blogPost.BlogPostBody == string.Empty)
+            if (blogPostDetail.BlogPostBody == string.Empty)
             {
                 ModelState.AddModelError("Blog Post Body", "The blog post body cannot be blank.");
             }
@@ -72,12 +72,12 @@ namespace EmrysSerenAPI.Controllers
             if (!ModelState.IsValid)
                 return BadRequest();
 
-            var blogPostToEdit = _blogPostRepository.GetBlogPostById(blogPost.BlogPostId);
+            var blogPostToEdit = _blogPostRepository.GetBlogPostById(blogPostDetail.BlogPostDetailId);
 
             if (blogPostToEdit == null)
                 return NotFound();
 
-            _blogPostRepository.EditBlogPost(blogPost);
+            _blogPostRepository.EditBlogPost(blogPostDetail);
 
             return NoContent();
 

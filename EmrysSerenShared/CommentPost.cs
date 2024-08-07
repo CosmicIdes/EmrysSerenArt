@@ -7,7 +7,7 @@
         public DateTime CommentPostDate { get; set; }
         public DateTime CommentPostTime { get; set; }
         public int CommentCount { get; set; }
-        public BlogPost BlogPostId { get; set; }
+        public BlogPostDetail BlogPostDetail { get; set; }
         public User UserId { get; set; }
     }
 }
