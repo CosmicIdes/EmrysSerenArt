@@ -33,20 +33,11 @@ namespace EmrysSerenData
                 .WithOne(e => e.BlogPostDetail)
                 .HasForeignKey(e => e.CommentPostId)
                 .HasPrincipalKey(e => e.BlogPostDetailId);
-            
-            /*
-            modelBuilder.Entity<BlogPostDetail>()
-                .Property(e => e.CommentPostId)
-                .HasConversion(
-                    v => v.ToString(), 
-                    v => (CommentPost)Enum.Parse(typeof(CommentPost), v));
-            */
-            /*
-            modelBuilder.ApplyConfiguration(new BlogPostDetailConfiguration());
-            modelBuilder.ApplyConfiguration(new UserConfiguration());
-            modelBuilder.ApplyConfiguration(new BlogTagConfiguration());
-            */
 
+            modelBuilder.ApplyConfiguration(new UserConfiguration());
+            modelBuilder.ApplyConfiguration(new BlogPostDetailConfiguration());
+            modelBuilder.ApplyConfiguration(new BlogTagConfiguration());
+            
         }
 
         public DbSet<CommentPost> CommentPosts { get; set; }

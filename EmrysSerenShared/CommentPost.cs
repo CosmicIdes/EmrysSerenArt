@@ -8,6 +8,6 @@
         public DateTime CommentPostTime { get; set; }
         public int CommentCount { get; set; }
         public BlogPostDetail BlogPostDetail { get; set; }
-        public User UserId { get; set; }
+        public User User { get; set; }
     }
 }
