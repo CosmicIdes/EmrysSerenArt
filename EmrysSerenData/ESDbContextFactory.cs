@@ -8,7 +8,7 @@ namespace EmrysSerenData
         public ESDbContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<ESDbContext>();
-            optionsBuilder.UseSqlite("Data Source = Blogs.db");
+            optionsBuilder.UseSqlite("Data Source = Blog.db");
 
             return new ESDbContext(optionsBuilder.Options);
         }

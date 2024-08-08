@@ -85,3 +85,11 @@ C:/Users/brand/OneDrive/Desktop/Projects/EmrysSerenArt/EmrysSerenArt/EmrysSerenA
 /Users/Orenji/Desktop/Projects/EmrysSerenArt/EmrysSerenArt/EmrysSerenAPI/obj/Debug/net7.0/EmrysSerenAPI.dll
 /Users/Orenji/Desktop/Projects/EmrysSerenArt/EmrysSerenArt/EmrysSerenAPI/obj/Debug/net7.0/refint/EmrysSerenAPI.dll
 /Users/Orenji/Desktop/Projects/EmrysSerenArt/EmrysSerenArt/EmrysSerenAPI/obj/Debug/net7.0/EmrysSerenAPI.pdb
+C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenAPI\obj\Debug\net7.0\EmrysSerenAPI.csproj.AssemblyReference.cache
+C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenAPI\obj\Debug\net7.0\EmrysSerenAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenAPI\obj\Debug\net7.0\EmrysSerenAPI.AssemblyInfoInputs.cache
+C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenAPI\obj\Debug\net7.0\EmrysSerenAPI.AssemblyInfo.cs
+C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenAPI\obj\Debug\net7.0\EmrysSerenAPI.csproj.CoreCompileInputs.cache
+C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenAPI\obj\Debug\net7.0\EmrysSerenAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenAPI\obj\Debug\net7.0\EmrysSerenAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\brand\OneDrive\Desktop\Projects\EmrysSerenArt\EmrysSerenArt\EmrysSerenAPI\obj\Debug\net7.0\EmrysSerenAPI.sourcelink.json

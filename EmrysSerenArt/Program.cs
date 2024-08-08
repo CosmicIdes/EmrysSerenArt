@@ -1,13 +1,23 @@
 
 
+using EmrysSerenData;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddTransient<DbInitializer>();
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 
 var app = builder.Build();
 
+using var scope = app.Services.CreateScope();
+
+var services = scope.ServiceProvider;
+
+var initializer = services.GetRequiredService<DbInitializer>();
+
+initializer.Run();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

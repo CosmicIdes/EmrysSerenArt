@@ -1,34 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Orenji/Desktop/Projects/EmrysSerenArt/EmrysSerenArt/EmrysSerenData/EmrysSerenData.csproj": {}
+    "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenData\\EmrysSerenData.csproj": {}
   },
   "projects": {
-    "/Users/Orenji/Desktop/Projects/EmrysSerenArt/EmrysSerenArt/EmrysSerenData/EmrysSerenData.csproj": {
+    "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenData\\EmrysSerenData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Orenji/Desktop/Projects/EmrysSerenArt/EmrysSerenArt/EmrysSerenData/EmrysSerenData.csproj",
+        "projectUniqueName": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenData\\EmrysSerenData.csproj",
         "projectName": "EmrysSerenData",
-        "projectPath": "/Users/Orenji/Desktop/Projects/EmrysSerenArt/EmrysSerenArt/EmrysSerenData/EmrysSerenData.csproj",
-        "packagesPath": "/Users/Orenji/.nuget/packages/",
-        "outputPath": "/Users/Orenji/Desktop/Projects/EmrysSerenArt/EmrysSerenArt/EmrysSerenData/obj/",
+        "projectPath": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenData\\EmrysSerenData.csproj",
+        "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenData\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/Orenji/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\brand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/Orenji/Desktop/Projects/EmrysSerenArt/EmrysSerenArt/EmrysSerenShared/EmrysSerenShared.csproj": {
-                "projectPath": "/Users/Orenji/Desktop/Projects/EmrysSerenArt/EmrysSerenArt/EmrysSerenShared/EmrysSerenShared.csproj"
+              "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenShared\\EmrysSerenShared.csproj": {
+                "projectPath": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenShared\\EmrysSerenShared.csproj"
               }
             }
           }
@@ -37,6 +43,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -59,7 +70,7 @@
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -78,27 +89,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.317/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/Orenji/Desktop/Projects/EmrysSerenArt/EmrysSerenArt/EmrysSerenShared/EmrysSerenShared.csproj": {
+    "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenShared\\EmrysSerenShared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Orenji/Desktop/Projects/EmrysSerenArt/EmrysSerenArt/EmrysSerenShared/EmrysSerenShared.csproj",
+        "projectUniqueName": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenShared\\EmrysSerenShared.csproj",
         "projectName": "EmrysSerenShared",
-        "projectPath": "/Users/Orenji/Desktop/Projects/EmrysSerenArt/EmrysSerenArt/EmrysSerenShared/EmrysSerenShared.csproj",
-        "packagesPath": "/Users/Orenji/.nuget/packages/",
-        "outputPath": "/Users/Orenji/Desktop/Projects/EmrysSerenArt/EmrysSerenArt/EmrysSerenShared/obj/",
+        "projectPath": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenShared\\EmrysSerenShared.csproj",
+        "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenShared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/Orenji/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\brand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -111,6 +128,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -132,7 +154,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.317/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }

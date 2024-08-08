@@ -1,25 +1,27 @@
 ﻿using EmrysSerenData.Configuration;
 using EmrysSerenShared;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace EmrysSerenData
 {
     public class ESDbContext : DbContext
     {
-        private readonly string _connectionString;
+        private readonly IConfiguration Configuration;
 
-        public ESDbContext(string connectionString)
+        public ESDbContext(IConfiguration configuration)
         {
-            _connectionString = connectionString;
+            Configuration = configuration;
         }
 
+   
         public ESDbContext(DbContextOptions<ESDbContext> options) : base(options)
         { 
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(_connectionString);
+            optionsBuilder.UseSqlite(Configuration.GetConnectionString("BlogDB"));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -32,9 +34,10 @@ namespace EmrysSerenData
                 .HasForeignKey(e => e.CommentPostId)
                 .HasPrincipalKey(e => e.BlogPostDetailId)
                 .OnDelete(DeleteBehavior.Cascade);
-
+            /*
             modelBuilder.ApplyConfiguration(new UserConfiguration());
             modelBuilder.ApplyConfiguration(new BlogPostDetailConfiguration());
+            */
         }
 
         public DbSet<CommentPost> CommentPosts { get; set; }
