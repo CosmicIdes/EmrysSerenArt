@@ -18,7 +18,19 @@ namespace EmrysSerenData.Configuration
                     BlogPostDate = DateTime.Now,
                     BlogPostTime = DateTime.Now,
                     UserId = 1,
-                    CommentPost = null
+                    CommentPost = new CommentPost
+                    {
+                        CommentPostId = 1,
+                        CommentPostBody = "Hello Emrys!",
+                        CommentPostDate = DateTime.Now,
+                        CommentPostTime = DateTime.Now,
+                        User = new User
+                        {
+                            UserId = 3,
+                            UserName = "Calliope Woods",
+                            UserEmail = "calliopewoods@gmail.com"
+                        }
+                    }
                 }
             );
         }

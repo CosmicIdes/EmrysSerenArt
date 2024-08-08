@@ -22,12 +22,6 @@ namespace EmrysSerenData.Configuration
                     UserId = 2,
                     UserName = "Cosmic Ides",
                     UserEmail = "brandi.hornbuckle@gmail.com"
-                },
-                new User
-                {
-                    UserId = 3,
-                    UserName = "Calliope Woods",
-                    UserEmail = "calliopewoods@gmail.com"
                 }
             );
         }

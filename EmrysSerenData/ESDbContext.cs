@@ -1,8 +1,6 @@
-﻿using System.Reflection.Metadata;
-using EmrysSerenData.Configuration;
+﻿using EmrysSerenData.Configuration;
 using EmrysSerenShared;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 
 namespace EmrysSerenData
 {
@@ -32,7 +30,8 @@ namespace EmrysSerenData
                 .HasMany(e => e.CommentPosts)
                 .WithOne(e => e.BlogPostDetail)
                 .HasForeignKey(e => e.CommentPostId)
-                .HasPrincipalKey(e => e.BlogPostDetailId);
+                .HasPrincipalKey(e => e.BlogPostDetailId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.ApplyConfiguration(new UserConfiguration());
             modelBuilder.ApplyConfiguration(new BlogPostDetailConfiguration());
