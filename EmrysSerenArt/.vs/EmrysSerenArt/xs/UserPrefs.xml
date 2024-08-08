@@ -1,32 +1,34 @@
 ﻿<Properties StartupConfiguration="{C7DF8344-088E-4D34-A125-F0D196DA5180}|https">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../EmrysSerenData/Migrations/20240804234611_InitialCreate.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="../EmrysSerenData/ESDbContext.cs" Line="32" Column="16" />
-      <File FileName="../EmrysSerenShared/BlogPostDetail.cs" Line="25" Column="54" />
-      <File FileName="../EmrysSerenShared/CommentPost.cs" Line="5" Column="9" />
-      <File FileName="../EmrysSerenData/Migrations/20240804234611_InitialCreate.cs" Line="1" Column="1" />
+      <File FileName="../EmrysSerenData/ESDbContext.cs" Line="19" Column="1" />
+      <File FileName="Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="EmrysSerenArt" selected="True">
-            <Node name="EmrysSerenArt" expanded="True">
-              <Node name="Pages" expanded="True" />
+          <Node name="EmrysSerenArt">
+            <Node name="EmrysSerenAPI" expanded="True">
+              <Node name="Controllers" expanded="True" />
             </Node>
             <Node name="EmrysSerenData" expanded="True">
-              <Node name="Migrations" expanded="True" />
+              <Node name="Configuration" expanded="True" />
             </Node>
-            <Node name="EmrysSerenShared" expanded="True" />
+            <Node name="EmrysSerenShared">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.EmrysSerenArt PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

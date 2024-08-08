@@ -35,8 +35,6 @@ namespace EmrysSerenData
 
             modelBuilder.ApplyConfiguration(new UserConfiguration());
             modelBuilder.ApplyConfiguration(new BlogPostDetailConfiguration());
-            modelBuilder.ApplyConfiguration(new BlogTagConfiguration());
-            
         }
 
         public DbSet<CommentPost> CommentPosts { get; set; }

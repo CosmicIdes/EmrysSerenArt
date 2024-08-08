@@ -18,6 +18,11 @@ namespace EmrysSerenData.Configuration
                     BlogPostDate = DateTime.Now,
                     BlogPostTime = DateTime.Now,
                     UserId = 1,
+                    BlogTag = new BlogTag
+                    {
+                        BlogTagId = 1,
+                        BlogTagString = "updates"
+                    },
                     CommentPost = new CommentPost
                     {
                         CommentPostId = 1,

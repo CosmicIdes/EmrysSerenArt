@@ -14,7 +14,7 @@ namespace EmrysSerenShared
         public DateTime BlogPostDate { get; set; }
         public DateTime BlogPostTime { get; set; }
 
-        public int BlogTagId { get; set; }
+        [NotMapped]
         public BlogTag BlogTag { get; set; }
 
         public int UserId { get; set; }
