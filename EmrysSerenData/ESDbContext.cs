@@ -15,7 +15,7 @@ namespace EmrysSerenData
         }
 
    
-        public ESDbContext(DbContextOptions<ESDbContext> options) : base(options)
+        public ESDbContext(DbContextOptions options) : base(options)
         { 
         }
 

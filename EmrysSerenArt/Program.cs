@@ -1,6 +1,9 @@
 
 
 using EmrysSerenData;
+using Microsoft.EntityFrameworkCore;
+
+var environmentName = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Development";
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +11,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddTransient<DbInitializer>();
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+
+var _ = new ConfigurationBuilder()
+         .SetBasePath(builder.Environment.ContentRootPath)
+.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+.AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true)
+.AddEnvironmentVariables()
+.Build();
 
 var app = builder.Build();
 
