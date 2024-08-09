@@ -18,6 +18,7 @@ namespace EmrysSerenData.Configuration
                     BlogPostDate = DateTime.Now,
                     BlogPostTime = DateTime.Now,
                     UserId = 1,
+                    UserName = "Emrys Seren",
                     BlogTag = new BlogTag
                     {
                         BlogTagId = 1,

@@ -8,16 +8,14 @@ namespace EmrysSerenData
     public class ESDbContext : DbContext
     {
 
-        public ESDbContext(DbContextOptions options) : base(options)
-        { 
+        public ESDbContext(DbContextOptions<ESDbContext> options) : base(options)
+        {
+            Database.EnsureCreated();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var folder = Environment.SpecialFolder.Desktop;
-            var path = Environment.GetFolderPath(folder);
-            var DbPath = Path.Join(path, "Blog.db");
-            optionsBuilder.UseSqlite($"Data Source={DbPath}");
+            optionsBuilder.UseSqlite($"Data Source=./EmrysSerenData/Blog.db");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

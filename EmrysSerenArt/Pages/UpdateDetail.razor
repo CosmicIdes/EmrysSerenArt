@@ -1,10 +1,22 @@
-﻿@page "/updatedetail/{blogpostid}"
+﻿@page "/updatedetail/{blogpostdetailid}"
 @using EmrysSerenShared
+@using EmrysSerenData
+@using Microsoft.EntityFrameworkCore;
 
+
+@inject IDbContextFactory<ESDbContext> ESDbContextFactory;
+@inject ESDbContext? _context;
+
+@if (BlogPostDetailId == null)
+{
+    <p><em>BlogPost not found!</em></p>
+}
+else
+{
 <h1>@BlogPostDetail.BlogPostTitle</h1>
 <br />
 <div class="subHeader">
-    <h2>Updates</h2>
+    <h2>Update</h2>
 </div>
 <br>
 <div class="updatePage">
@@ -29,23 +41,24 @@
         </section>
     </div>
 </div>
+}
 
 @code {
 
     [Parameter]
-    public string BlogPostId { get; set; }
+    public string BlogPostDetailId { get; set; }
 
     public BlogPostDetail BlogPostDetail { get; set; } = new BlogPostDetail();
 
     public CommentPost CommentPost { get; set; } = new CommentPost();
-    /*
+    
     protected override Task OnInitializedAsync()
     {
         BlogPostDetail = BlogPostDetails.FirstOrDefault(b => b.BlogPostDetailId == int.Parse(BlogPostDetailId));
 
         return base.OnInitializedAsync();
     }
-    */
+    
     public IEnumerable<BlogPostDetail> BlogPostDetails { get; set; }
 
 }

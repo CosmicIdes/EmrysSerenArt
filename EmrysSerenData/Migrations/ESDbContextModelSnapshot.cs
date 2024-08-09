@@ -40,6 +40,10 @@ namespace EmrysSerenData.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.HasKey("BlogPostDetailId");
 
                     b.HasIndex("UserId");
@@ -51,10 +55,11 @@ namespace EmrysSerenData.Migrations
                         {
                             BlogPostDetailId = 1,
                             BlogPostBody = "Hi, I’m Emrys Seren, also called Emmeryn. I’m a disabled artist from the midwestern United States. I enjoy fantasy and magic especially, so the majority of my works are fantasy. But I also enjoy autobiographical comics. \r\n\r\nI spend quite a lot of time on native restoration in the garden, planting flowers and learning about my local ecosystem. My favorite animal is actually the moth, so the majority of plants are grown for them. \r\n\r\nMy cat, Hoshi, is also called Egg. It’s because she’s egg shaped. She’s the sweetest little cat ever and clings to me while she sleeps. She also follows me around, rubbing against my legs. However sometimes she feels anxiety around other cats and tries to commit atrocities. When this happens she is placed in an alternate room to cool down. What a good cat. \r\n\r\nYou have entered my domain, where the posts will be about things I like, like fantasy, moths, and cats. Welcome. \r\n",
-                            BlogPostDate = new DateTime(2024, 8, 9, 2, 9, 35, 981, DateTimeKind.Local).AddTicks(458),
-                            BlogPostTime = new DateTime(2024, 8, 9, 2, 9, 35, 981, DateTimeKind.Local).AddTicks(500),
+                            BlogPostDate = new DateTime(2024, 8, 9, 9, 32, 29, 25, DateTimeKind.Local).AddTicks(7288),
+                            BlogPostTime = new DateTime(2024, 8, 9, 9, 32, 29, 25, DateTimeKind.Local).AddTicks(7332),
                             BlogPostTitle = "Introduction",
-                            UserId = 1
+                            UserId = 1,
+                            UserName = "Emrys Seren"
                         });
                 });
 

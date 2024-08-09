@@ -9,7 +9,8 @@ var connectionString = builder.Configuration.GetConnectionString("BlogDB");
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddDbContextFactory<ESDbContext>();
+builder.Services.AddDbContextFactory<ESDbContext>(options => options.UseSqlite(connectionString));
+
 
 var app = builder.Build();
 
