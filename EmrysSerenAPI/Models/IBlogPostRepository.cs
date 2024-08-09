@@ -4,11 +4,11 @@ namespace EmrysSerenAPI.Models
 {
     public interface IBlogPostRepository
     {
-        IEnumerable<BlogPost> GetAllBlogPosts();
-        BlogPost GetBlogPostById(int blogPostId);
-        BlogPost CreateBlogPost(BlogPost blogPost);
-        BlogPost EditBlogPost(BlogPost blogPost);
-        void DeleteBlogPost(int blogPostId);
+        IEnumerable<BlogPostDetail> GetAllBlogPosts();
+        BlogPostDetail GetBlogPostById(int blogPostDetailId);
+        BlogPostDetail CreateBlogPost(BlogPostDetail blogPostDetail);
+        BlogPostDetail EditBlogPost(BlogPostDetail blogPostDetail);
+        //void DeleteBlogPost(int blogPostDetailId);
 
     }
 }

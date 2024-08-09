@@ -21,11 +21,11 @@ namespace EmrysSerenAPI.Controllers
         {
             return Ok(_commentPostRepository.GetAllCommentPosts());
         }
-
-        [HttpGet("{blogid}")]
-        public IActionResult GetCommentPostsByBlogId(BlogPost blogid)
+        /*
+        [HttpGet("{blogpostdetailid}")]
+        public IActionResult GetCommentPostsByBlogId(BlogPostDetail blogpostdetailid)
         {
-            return Ok(_commentPostRepository.GetCommentPostsByBlogId(blogid));
+            return Ok(_commentPostRepository.GetCommentPostsByBlogId(blogpostdetailid));
         }
 
         [HttpGet("{userid}")]
@@ -33,5 +33,6 @@ namespace EmrysSerenAPI.Controllers
         {
             return Ok(_commentPostRepository.GetCommentPostsByUserId(userid));
         }
+        */
     }
 }

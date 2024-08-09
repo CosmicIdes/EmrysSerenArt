@@ -12,49 +12,50 @@ namespace EmrysSerenAPI.Models
             _esDbContext = esDbContext;
         }
 
-        public IEnumerable<BlogPost> GetAllBlogPosts()
+        public IEnumerable<BlogPostDetail> GetAllBlogPosts()
         {
-            return _esDbContext.BlogPosts;
+            return _esDbContext.BlogPostDetails;
         }
 
-        public BlogPost GetBlogPostById(int blogPostId)
+        public BlogPostDetail GetBlogPostById(int blogPostDetailId)
         {
-            return _esDbContext.BlogPosts.FirstOrDefault(b => b.BlogPostId == blogPostId);
+            return _esDbContext.BlogPostDetails.FirstOrDefault(b => b.BlogPostDetailId == blogPostDetailId);
         }
 
-        public BlogPost CreateBlogPost(BlogPost blogPost)
+        public BlogPostDetail CreateBlogPost(BlogPostDetail blogPostDetail)
         {
-            var addedEntity = _esDbContext.BlogPosts.Add(blogPost);
+            var addedEntity = _esDbContext.BlogPostDetails.Add(blogPostDetail);
             _esDbContext.SaveChanges();
             return addedEntity.Entity;
         }
 
-        public BlogPost EditBlogPost(BlogPost blogPost)
+        public BlogPostDetail EditBlogPost(BlogPostDetail blogPostDetail)
         {
-            var foundBlogPost = _esDbContext.BlogPosts.FirstOrDefault(p => p.BlogPostId == blogPost.BlogPostId);
+            var foundBlogPost = _esDbContext.BlogPostDetails.FirstOrDefault(p => p.BlogPostDetailId == blogPostDetail.BlogPostDetailId);
 
             if (foundBlogPost != null)
             {
-                foundBlogPost.BlogPostId = blogPost.BlogPostId;
-                foundBlogPost.BlogPostTitle = blogPost.BlogPostTitle;
-                foundBlogPost.BlogPostBody = blogPost.BlogPostBody;
-                foundBlogPost.BlogPostDate = blogPost.BlogPostDate;
-                foundBlogPost.BlogPostTime = blogPost.BlogPostTime;
+                foundBlogPost.BlogPostDetailId = blogPostDetail.BlogPostDetailId;
+                foundBlogPost.BlogPostTitle = blogPostDetail.BlogPostTitle;
+                foundBlogPost.BlogPostBody = blogPostDetail.BlogPostBody;
+                foundBlogPost.BlogPostDate = blogPostDetail.BlogPostDate;
+                foundBlogPost.BlogPostTime = blogPostDetail.BlogPostTime;
 
                 _esDbContext.SaveChanges();
                 return foundBlogPost;
             }
             return null;
         }
-
+        /*
         public void DeleteBlogPost(int BlogPostId)
         {
-            var foundBlogPost = _esDbContext.BlogPosts.FirstOrDefault(p => p.BlogPostId == BlogPostId);
+            var foundBlogPost = _esDbContext.BlogPostDetails.FirstOrDefault(p => p.BlogPostDetailId == blogPostDetailId);
             if (foundBlogPost == null) return;
 
-            _esDbContext.BlogPosts.Remove(foundBlogPost);
+            _esDbContext.BlogPostDetails.Remove(foundBlogPost);
             _esDbContext.SaveChanges();
 
         }
+        */
     }
 }

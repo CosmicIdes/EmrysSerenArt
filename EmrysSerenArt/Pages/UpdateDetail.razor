@@ -1,7 +1,7 @@
 ﻿@page "/updatedetail/{blogpostid}"
 @using EmrysSerenShared
 
-<h1>@BlogPost.BlogPostTitle</h1>
+<h1>@BlogPostDetail.BlogPostTitle</h1>
 <br />
 <div class="subHeader">
     <h2>Updates</h2>
@@ -10,17 +10,17 @@
 <div class="updatePage">
     <div class="updateBox">
         <section class="updateHeader">
-            <h3 class="h3sub">@BlogPost.BlogPostTitle</h3>
+            <h3 class="h3sub">@BlogPostDetail.BlogPostTitle</h3>
         </section>
         <section class="updateTime">
-            <h6>Posted at @BlogPost.BlogPostTime @BlogPost.BlogPostDate</h6>
+            <h6>Posted at @BlogPostDetail.BlogPostTime @BlogPostDetail.BlogPostDate</h6>
         </section>
         <section class="updateTags">
             <p class="tags"></p>
         </section>
         <section class="updateBody">
             <article class="updatePost">
-                @BlogPost.BlogPostBody
+                @BlogPostDetail.BlogPostBody
             </article>
         </section>
         <section class="updateComments">
@@ -35,17 +35,17 @@
     [Parameter]
     public string BlogPostId { get; set; }
 
-    public BlogPost BlogPost { get; set; } = new BlogPost();
+    public BlogPostDetail BlogPostDetail { get; set; } = new BlogPostDetail();
 
     public CommentPost CommentPost { get; set; } = new CommentPost();
-
+    /*
     protected override Task OnInitializedAsync()
     {
-        BlogPost = BlogPosts.FirstOrDefault(b => b.BlogPostId == int.Parse(BlogPostId));
+        BlogPostDetail = BlogPostDetails.FirstOrDefault(b => b.BlogPostDetailId == int.Parse(BlogPostDetailId));
 
         return base.OnInitializedAsync();
     }
-
-    public IEnumerable<BlogPost> BlogPosts { get; set; }
+    */
+    public IEnumerable<BlogPostDetail> BlogPostDetails { get; set; }
 
 }

@@ -3,21 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenArt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C7DF8344-088E-4D34-A125-F0D196DA5180}|EmrysSerenArt.csproj|c:\\users\\brand\\onedrive\\desktop\\projects\\emrysserenart\\emrysserenart\\emrysserenart\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7DF8344-088E-4D34-A125-F0D196DA5180}|EmrysSerenArt.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenData\\Migrations\\20240809060936_InitialCreation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{905D26C6-47B0-4A5A-9ECF-D759E66FB8C0}|..\\EmrysSerenData\\EmrysSerenData.csproj|c:\\users\\brand\\onedrive\\desktop\\projects\\emrysserenart\\emrysserenart\\emrysserendata\\esdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{905D26C6-47B0-4A5A-9ECF-D759E66FB8C0}|..\\EmrysSerenData\\EmrysSerenData.csproj|c:\\users\\brand\\onedrive\\desktop\\projects\\emrysserenart\\emrysserenart\\emrysserendata\\esdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7DF8344-088E-4D34-A125-F0D196DA5180}|EmrysSerenArt.csproj|c:\\users\\brand\\onedrive\\desktop\\projects\\emrysserenart\\emrysserenart\\emrysserenart\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C7DF8344-088E-4D34-A125-F0D196DA5180}|EmrysSerenArt.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{905D26C6-47B0-4A5A-9ECF-D759E66FB8C0}|..\\EmrysSerenData\\EmrysSerenData.csproj|c:\\users\\brand\\onedrive\\desktop\\projects\\emrysserenart\\emrysserenart\\emrysserendata\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7DF8344-088E-4D34-A125-F0D196DA5180}|EmrysSerenArt.csproj|c:\\users\\brand\\onedrive\\desktop\\projects\\emrysserenart\\emrysserenart\\emrysserenart\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DF8344-088E-4D34-A125-F0D196DA5180}|EmrysSerenArt.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,8 +20,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20240809060936_InitialCreation.cs",
+              "DocumentMoniker": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenData\\Migrations\\20240809060936_InitialCreation.cs",
+              "RelativeDocumentMoniker": "..\\EmrysSerenData\\Migrations\\20240809060936_InitialCreation.cs",
+              "ToolTip": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenData\\Migrations\\20240809060936_InitialCreation.cs",
+              "RelativeToolTip": "..\\EmrysSerenData\\Migrations\\20240809060936_InitialCreation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T06:09:36.237Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -37,7 +43,7 @@
               "RelativeDocumentMoniker": "..\\EmrysSerenData\\ESDbContext.cs",
               "ToolTip": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenData\\ESDbContext.cs",
               "RelativeToolTip": "..\\EmrysSerenData\\ESDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAKAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-09T00:56:33.789Z",
               "EditorCaption": ""
@@ -45,53 +51,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ESDbContextFactory.cs",
-              "DocumentMoniker": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenData\\ESDbContextFactory.cs",
-              "RelativeDocumentMoniker": "..\\EmrysSerenData\\ESDbContextFactory.cs",
-              "ToolTip": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenData\\ESDbContextFactory.cs",
-              "RelativeToolTip": "..\\EmrysSerenData\\ESDbContextFactory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T21:07:17.119Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenArt\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenArt\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-08T20:55:33.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DbInitializer.cs",
-              "DocumentMoniker": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenData\\DbInitializer.cs",
-              "RelativeDocumentMoniker": "..\\EmrysSerenData\\DbInitializer.cs",
-              "ToolTip": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenData\\DbInitializer.cs",
-              "RelativeToolTip": "..\\EmrysSerenData\\DbInitializer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T19:42:43.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenArt\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\brand\\OneDrive\\Desktop\\Projects\\EmrysSerenArt\\EmrysSerenArt\\EmrysSerenArt\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAkwBQAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T19:27:15.674Z",
+              "WhenOpened": "2024-08-09T02:33:02.98Z",
               "EditorCaption": ""
             }
           ]

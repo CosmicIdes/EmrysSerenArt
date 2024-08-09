@@ -42,15 +42,15 @@
 *@
 
 @code {
-    private MudTable<BlogPost>
+    private MudTable<BlogPostDetail>
     mudTable;
-    private IEnumerable<BlogPost>
-        BlogPosts = new List<BlogPost>
+    private IEnumerable<BlogPostDetail>
+        BlogPosts = new List<BlogPostDetail>
             ();
 
             protected override async Task OnInitializedAsync()
             {
-            BlogPosts = await httpClient.GetFromJsonAsync<List<BlogPost>>("webapi/blogpost");
+            BlogPosts = await httpClient.GetFromJsonAsync<List<BlogPostDetail>>("webapi/blogpost");
     }
 
 }

@@ -16,15 +16,16 @@ namespace EmrysSerenAPI.Models
         {
             return _esDbContext.CommentPosts;
         }
-
-        public CommentPost GetCommentPostsByBlogId(BlogPost blogPostId)
+        /*
+        public CommentPost GetCommentPostsByBlogId(BlogPostDetail blogPostDetailId)
         {
-            return _esDbContext.CommentPosts.FirstOrDefault(c => c.BlogPostId == blogPostId);
+            return _esDbContext.CommentPosts.FirstOrDefault(c => c.BlogPostDetailId == blogPostDetailId);
         }
 
         public CommentPost GetCommentPostsByUserId(User userId)
         {
             return _esDbContext.CommentPosts.FirstOrDefault(u => u.UserId == userId);
         }
+        */
     }
 }

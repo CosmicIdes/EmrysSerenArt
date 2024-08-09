@@ -5,8 +5,8 @@ namespace EmrysSerenAPI.Models
     public interface ICommentPostRepository
     {
         IEnumerable<CommentPost> GetAllCommentPosts();
-        CommentPost GetCommentPostsByBlogId(BlogPost blogPostid);
-        CommentPost GetCommentPostsByUserId(User userid);
+        //CommentPost GetCommentPostsByBlogId(BlogPostDetail blogPostDetailId);
+        //CommentPost GetCommentPostsByUserId(User userid);
 
 
     }

@@ -1,12 +1,12 @@
 ﻿using EmrysSerenShared;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace EmrysSerenData.Configuration
 {
     public class UserConfiguration : IEntityTypeConfiguration<User>
     {
-    public void Configure(EntityTypeBuilder<User> builder)
+        public void Configure(EntityTypeBuilder<User> builder)
         {
             builder.HasData
             (
@@ -16,7 +16,6 @@ namespace EmrysSerenData.Configuration
                     UserName = "Emrys Seren",
                     UserEmail = "serenityaithne@gmail.com"
                 },
-    
                 new User
                 {
                     UserId = 2,

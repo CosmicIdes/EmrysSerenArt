@@ -48,7 +48,7 @@ namespace EmrysSerenAPI.Controllers
             if (!ModelState.IsValid)
                 return BadRequest();
 
-            var createdBlogPost = _blogPostRepository.CreateBlogPost(blogPost);
+            var createdBlogPost = _blogPostRepository.CreateBlogPost(blogPostDetail);
 
             return Created("blogPost", createdBlogPost);
         }
@@ -82,7 +82,7 @@ namespace EmrysSerenAPI.Controllers
             return NoContent();
 
         }
-
+        /*
         [HttpDelete]
         public IActionResult DeleteBlogPost(int id)
         {
@@ -98,5 +98,6 @@ namespace EmrysSerenAPI.Controllers
 
             return NoContent();
         }
+        */
     }
 }

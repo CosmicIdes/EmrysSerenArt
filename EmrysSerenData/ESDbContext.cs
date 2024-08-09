@@ -7,26 +7,32 @@ namespace EmrysSerenData
 {
     public class ESDbContext : DbContext
     {
-        private readonly IConfiguration Configuration;
 
-        public ESDbContext(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-
-   
         public ESDbContext(DbContextOptions options) : base(options)
         { 
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(Configuration.GetConnectionString("BlogDB"));
+            var folder = Environment.SpecialFolder.Desktop;
+            var path = Environment.GetFolderPath(folder);
+            var DbPath = Path.Join(path, "Blog.db");
+            optionsBuilder.UseSqlite($"Data Source={DbPath}");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<BlogPostDetail>()
+                .ToTable("BlogPostDetail");
+
+            modelBuilder.Entity<User>()
+                .ToTable("User");
+
+            modelBuilder.Entity<CommentPost>()
+                .ToTable("CommentPost");
+
+            modelBuilder.Entity<BlogTag>()
+                .ToTable("BlogTag");
             
             modelBuilder.Entity<BlogPostDetail>()
                 .HasMany(e => e.CommentPosts)
@@ -34,11 +40,12 @@ namespace EmrysSerenData
                 .HasForeignKey(e => e.CommentPostId)
                 .HasPrincipalKey(e => e.BlogPostDetailId)
                 .OnDelete(DeleteBehavior.Cascade);
-            /*
+
             modelBuilder.ApplyConfiguration(new UserConfiguration());
             modelBuilder.ApplyConfiguration(new BlogPostDetailConfiguration());
-            */
         }
+
+    
 
         public DbSet<CommentPost> CommentPosts { get; set; }
         public DbSet<User> Users { get; set; }

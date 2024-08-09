@@ -26,7 +26,7 @@ namespace EmrysSerenData.Configuration
                     CommentPost = new CommentPost
                     {
                         CommentPostId = 1,
-                        CommentPostBody = "Hello Emrys!",
+                        CommentPostBody = "Hello Emmeryn!! Welcome to the internet!",
                         CommentPostDate = DateTime.Now,
                         CommentPostTime = DateTime.Now,
                         User = new User

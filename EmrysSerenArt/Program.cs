@@ -3,31 +3,15 @@
 using EmrysSerenData;
 using Microsoft.EntityFrameworkCore;
 
-var environmentName = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Development";
-
 var builder = WebApplication.CreateBuilder(args);
 
+var connectionString = builder.Configuration.GetConnectionString("BlogDB");
 // Add services to the container.
-builder.Services.AddTransient<DbInitializer>();
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-
-var _ = new ConfigurationBuilder()
-         .SetBasePath(builder.Environment.ContentRootPath)
-.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-.AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true)
-.AddEnvironmentVariables()
-.Build();
+builder.Services.AddDbContextFactory<ESDbContext>();
 
 var app = builder.Build();
-
-using var scope = app.Services.CreateScope();
-
-var services = scope.ServiceProvider;
-
-var initializer = services.GetRequiredService<DbInitializer>();
-
-initializer.Run();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
