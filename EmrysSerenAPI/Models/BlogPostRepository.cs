@@ -46,8 +46,8 @@ namespace EmrysSerenAPI.Models
             }
             return null;
         }
-        /*
-        public void DeleteBlogPost(int BlogPostId)
+        
+        public void DeleteBlogPost(int blogPostDetailId)
         {
             var foundBlogPost = _esDbContext.BlogPostDetails.FirstOrDefault(p => p.BlogPostDetailId == blogPostDetailId);
             if (foundBlogPost == null) return;
@@ -56,6 +56,6 @@ namespace EmrysSerenAPI.Models
             _esDbContext.SaveChanges();
 
         }
-        */
+        
     }
 }

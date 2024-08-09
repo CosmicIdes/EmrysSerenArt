@@ -21,7 +21,7 @@ namespace EmrysSerenAPI.Controllers
         {
             return Ok(_commentPostRepository.GetAllCommentPosts());
         }
-        /*
+        
         [HttpGet("{blogpostdetailid}")]
         public IActionResult GetCommentPostsByBlogId(BlogPostDetail blogpostdetailid)
         {
@@ -33,6 +33,6 @@ namespace EmrysSerenAPI.Controllers
         {
             return Ok(_commentPostRepository.GetCommentPostsByUserId(userid));
         }
-        */
+        
     }
 }

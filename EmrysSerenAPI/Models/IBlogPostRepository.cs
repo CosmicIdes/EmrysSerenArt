@@ -8,7 +8,7 @@ namespace EmrysSerenAPI.Models
         BlogPostDetail GetBlogPostById(int blogPostDetailId);
         BlogPostDetail CreateBlogPost(BlogPostDetail blogPostDetail);
         BlogPostDetail EditBlogPost(BlogPostDetail blogPostDetail);
-        //void DeleteBlogPost(int blogPostDetailId);
+        void DeleteBlogPost(int blogPostDetailId);
 
     }
 }

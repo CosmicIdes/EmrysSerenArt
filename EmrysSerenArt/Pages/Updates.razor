@@ -3,7 +3,7 @@
 @using EmrysSerenShared
 @inject HttpClient httpClient
 
-@*
+
 <PageTitle>Emrys Seren Blog Updates</PageTitle>
 
 <main class="mainUpdates">
@@ -17,29 +17,25 @@
     }
     else
     {
-        <MudTable T="BlogPost" Items="@BlogPosts.Take(5)" Hover="true" Breakpoint="Breakpoint.None">
+        <MudTable T="BlogPostDetail" Items="@BlogPosts.Take(5)" Hover="true" Breakpoint="Breakpoint.None">
             <HeaderContent>
-                <MudTh>UserAvatar</MudTh>
                 <MudTh>UserName</MudTh>
                 <MudTh>BlogDate</MudTh>
                 <MudTh>BlogTitle</MudTh>
-                <MudTh>CommentCount</MudTh>
-                <MudTh>BlogPostTags</MudTh>
+                <MudTh>BlogTag</MudTh>
                 <MudTh>Details</MudTh>
             </HeaderContent>
             <RowTemplate>
-                <MudTd DataLabel="Avatar">@context.UserAvatar</MudTd>
-                <MudTd DataLabel="User">@context.UserName</MudTd>
-                <MudTd DataLabel="Date">@context.BlogPostDate</MudTd>
-                <MudTd DataLabel="Title">@context.BlogPostTitle</MudTd>
-                <MudTd DataLabel="Comments">"@context.CommentCount</MudTd>
-                <MudTd DataLabel="Tags">@context.BlogPostTags</MudTd>
-                <MudTd DataLabel="Link"><MudLink Href="@($"updatedetail/{context.BlogPostId}")"></MudLink></MudTd>
+                <MudTd DataLabel="UserName">@context.UserName</MudTd>
+                <MudTd DataLabel="BlogDate">@context.BlogPostDate</MudTd>
+                <MudTd DataLabel="BlogTitle">@context.BlogPostTitle</MudTd>
+                <MudTd DataLabel="BlogTag">@context.BlogTag</MudTd>
+                <MudTd DataLabel="Link"><MudLink Href="@($"updatedetail/{context.BlogPostDetailId}")"></MudLink></MudTd>
             </RowTemplate>
         </MudTable>
     }
 </main>
-*@
+
 
 @code {
     private MudTable<BlogPostDetail>

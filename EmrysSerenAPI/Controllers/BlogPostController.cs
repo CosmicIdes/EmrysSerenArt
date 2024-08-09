@@ -82,7 +82,7 @@ namespace EmrysSerenAPI.Controllers
             return NoContent();
 
         }
-        /*
+        
         [HttpDelete]
         public IActionResult DeleteBlogPost(int id)
         {
@@ -98,6 +98,6 @@ namespace EmrysSerenAPI.Controllers
 
             return NoContent();
         }
-        */
+        
     }
 }
