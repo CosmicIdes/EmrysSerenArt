@@ -20,14 +20,7 @@ The project is my capstone project for CODE:You. This project is a blog for the 
 
 To run this project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/CosmicIdes/EmrysSerenArt.git`
-1. Update packages
-1. Set the following configurations
-     * `DatabaseConnectionString` = {server name}/{database name}
-     * `ApiBaseUrl` = {api_url}/api/root
-     * `SomeOtherConfig` = 42
-1. Setup database by running such-and-such on the command line.
-1. Run the script located (here) to seed the data in the database
+1. Coming soon!
 
 ## User Setup
 1. Register a new user
